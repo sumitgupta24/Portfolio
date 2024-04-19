@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="name">
+                Sumit Gupta.    
+            </div>
+            <button id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+
+            <a href="home.html"><div class="navitem">Home</div></a>
+            <a href="#a"><div class="navitem">About</div></a>
+            <a href="#Education"><div class="navitem">Education</div></a>
+            <a href="#Skills"><div class="navitem">Skills</div></a>
+            <a href="#projects"><div class="navitem">Projects</div></a>
+            <a href="#contact"><div class="navitem">Contact</div></a>
+        </div>
+    </nav>
+    <div class="intropage">
+        <div class="intro">
+            <div class="intro1">Hey!I am Sumit.</div>
+            <div class="intro2">I am a second-year undergraduate student pursuing a BTech degree at VIT Vellore.</div>
+        </div>
+        <div class="image">
+            <img src="me.jpg">
+        </div>
+    </div>
+    <div class="aboutme" id="a">
+        <div class="space"></div>
+        <h1>About</h1>
+        <div class="aboutme1">
+            <img src="abc.webp">
+            <p>As a second-year BTech student at VIT Vellore, I possess foundational coding skills in C/C++, Java, and
+                Python, along with intermediate proficiency in HTML and CSS, and a basic understanding of JavaScript. In
+                addition to my technical abilities, I excel in communication and possess creative skills that enhance my
+                problem-solving capabilities. This combination of skills equips me to tackle diverse challenges and
+                contribute effectively to collaborative projects in the field of technology.
+            </p>
+        </div>
+    </div>
+    <div id="Education" class="education">
+        <div class="space"></div>
+        <h1>Education</h1>
+        <div class="eddetails">
+            <div class="college">
+                <h2>Vellore Institute of Technology</h2>
+                <h3>Bachelors of Technology(B.Tech)</h3>
+                <h4>2022-2026</h4>
+                <h3>Specialization: Computer Science and Engineering</h3>
+            </div>
+            <div class="highschool">
+                <h2>Annie Besant International School</h2>
+                <h3>Higher Secondary School</h3>
+                <h4>2019-2021</h4>
+                <h3>Specialization: Science</h3>
+            </div>
+            <div class="lowschool">
+                <h2>D.A.V Sushil Kedia Vishwa Bharati School</h2>
+                <h3>Lower Secondary School</h3>
+                <h4>2006-2019</h4>
+                <h3>Specialization: Science</h3>
+            </div>
+        </div>
+    </div>
+    <div id="Skills" class="skills">
+        <h1>Skills</h1>
+        <div class="coding">
+            <img src="c++.jpeg">
+            <img src="java.png">
+            <img src="python.jpeg">
+            
+        </div>
+        <div class="development">
+            <img src="html5.png">
+            <img src="css3.png">
+            <img src="js.png">
+        </div>
+        <div class="extra">
+            <img src="windows.png">
+            <img src="vscode.png">
+        </div>
+    </div>
+    <div id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="proj">
+            <div class="proj1">
+                <img src="moviesearch.png">
+                <h3>Movie Search</h3>
+                <div class="butto"><a href="https://sumitgupta24.github.io/" target="_blank">GitHub</a></div>
+            </div>
+            <div class="proj2">
+                <img src="grouppproject.png">
+                <h3>Group Project</h3>
+                <div class="butto"><a href="https://sumitgupta24.github.io/" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="contact1">
+        <h1>Let's Connect</h1>
+        <div class="inputdetails">
+            <div class="inputdet">
+            <form action="">
+                <input type="text" placeholder="Name" name="name" id="name"><br><br>
+                <input type="text" placeholder="Email" name="email" id="email"><br><br>
+                <textarea id="message" placeholder="Message" rows="10" cols="40"></textarea><br><br>
+                <button type="submit" class="butt">Submit</button>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="contactme" class="contactme">
+        <div class="content">
+        <h1>Sumit Gupta.</h1>
+        <div id="number">Mobile: +977 9813204173/+91 7061935850</div>
+        <div id="email">Email: cricsumit24@gmail.com</div>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light-mode';
+    
+        document.body.classList.add(currentTheme);
+        toggleButton.textContent = currentTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+    
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
+            
+            const newTheme = document.body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
+            toggleButton.textContent = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* background-color: #0056b3; */
+}
+body{
+    background-color: #040D12;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* background-color: #eaeaea; */
+    /* padding: 20px; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #183D3D;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    margin-left: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: #5C8374;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+
+.intropage{
+    height: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    /* color: white; */
+    margin-bottom: 200px;
+}
+
+.intro1{
+    font-size: 100px;
+    margin-left: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, #183D3D,#93B1A6);
+    color: transparent;
+    background-clip: text;
+}
+
+.intro2{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 100px;
+}
+
+.intro{
+    width: 60%;
+}
+.intropage img{
+    margin-right: 80px;
+    height: 400px;
+    width: 400px;
+    object-fit: fill;
+    border-radius: 50%;
+}
+
+.aboutme,.education,.skills,.projects{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.aboutme h1{
+    margin-left: 45%;
+    font-size: 50px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+.aboutme1{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.aboutme1 p{
+    /* color: white; */
+    width: 120%;
+    font-size: 25px;
+    margin-top: 70px;
+}
+.aboutme img{
+    height: 50%;
+    width: 50%;
+    object-fit: fill;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+#Education h1{
+    color: white;
+    margin-left: 45%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+
+.college{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 45%;
+    font-size: 20px;
+    margin-left: 100px;
+    box-shadow: 0 2px 6px rgb(138, 131, 131);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.highschool{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 45%;
+    font-size: 20px;
+    box-shadow: 0 2px 6px rgb(138, 131, 131);
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-bottom: 20px;
+}
+
+.lowschool{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 45%;
+    font-size: 20px;
+    box-shadow: 0 2px 6px rgb(138, 131, 131);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.eddetails h4{
+    background-image: linear-gradient(to left, rgb(17, 8, 133), rgb(18, 181, 231));
+    color: transparent;
+    background-clip: text;
+}
+
+#Skills h1{
+    margin-top: 50px;
+    margin-left: 45%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+
+.coding img{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.coding,.development{
+    margin-left: 35%;
+}
+
+.development img{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+}
+
+.extra img{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+}
+
+.extra{
+    margin-left: 40%;
+}
+
+.space{
+    height: 12vh;
+}
+#projects h1{
+    margin-top: 50px;
+    margin-left: 45%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+.proj{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.proj1,.proj2{
+    border: 2.5px solid white;
+    padding: 10px;
+}
+.proj1 img,.proj2 img{
+    height: 300px;
+    width: 500px;
+    gap: 20px;
+}
+.proj1 h3,.proj2 h3{
+    margin-left: 30%;
+    font-size: 2rem;
+}
+.butto{
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 40%;
+    width: 20%;
+}
+.butto:hover {
+    background-color: #218838;
+}
+#contact h1{
+    margin-top: 70px;
+    margin-left: 40%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(47, 11, 209));
+    color: transparent;
+    background-clip: text;
+
+}
+.inputdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.butt {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 40%;
+}
+
+.butt:hover {
+    background-color: #218838;
+}
+.content{
+    margin-left: 35%;
+}
+.contactme h1{
+    font-size: 4rem;
+    background-image: linear-gradient(to left, rgb(4, 253, 66), rgb(5, 44, 2));
+    color: transparent;
+    background-clip: text;
+}
+
+.aboutme, #Education, #Skills, #projects, #contact,#contactme {
+    /* background-color: #292727; */
+    margin-top: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 35px rgba(241, 239, 239, 0.1);
+}
+
+    :root {
+        --background-color-light: #B3C8CF;
+        --text-color-light: #0f0f0f;
+        --background-color-dark: #040D12;   ;
+        --text-color-dark: #eaeaea;
+        --nav-background-light: #E5DDC5;
+        --nav-background-dark: #183D3D;
+        --nav-text-light: #ffffff;
+        --nav-text-dark: #ffffff;
+    }
+    
+    body.light-mode {
+        background-color: var(--background-color-light);
+        color: var(--text-color-light);
+    }
+    
+    body.dark-mode {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+
+    .aboutme.light-mode,.intropage.light-mode{
+        color: var(--text-color-light);
+    }
+    .aboutme.dark-mode,.intropage.dark-mode{
+        color: var(--text-color-dark);
+    }
+    
+    .navbar.light-mode {
+        background-color: var(--nav-background-light);
+    }
+    
+    .navbar.dark-mode {
+        background-color: var(--nav-background-dark);
+    }
+    
+    .aboutme.dark-mode, #Education.dark-mode, #Skills.dark-mode, #projects.dark-mode, #contact.dark-mode{
+        background-color: var(--background-color-light);
+    }
+    
+    
+    
+     
