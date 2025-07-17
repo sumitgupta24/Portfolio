@@ -7,18 +7,21 @@
     <title>My Portfolio!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <nav>
-        <div class="navbar">
+        <div class="navbar" id="home">
             <div class="name">
                 Sumit Gupta.    
             </div>
-            <button id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            <button id="theme-toggle"><i id="theme-icon" class="fa fa-sun"></i></button>
 
-            <a href="home.html"><div class="navitem">Home</div></a>
-            <a href="#a"><div class="navitem">About</div></a>
+
+            <a href="#home"><div class="navitem">Home</div></a>
+            <a href="#about"><div class="navitem">About</div></a>
             <a href="#Education"><div class="navitem">Education</div></a>
             <a href="#Skills"><div class="navitem">Skills</div></a>
             <a href="#projects"><div class="navitem">Projects</div></a>
@@ -26,27 +29,40 @@
         </div>
     </nav>
     <div class="intropage">
-        <div class="intro">
-            <div class="intro1">Hey!I am Sumit.</div>
-            <div class="intro2">I am a second-year undergraduate student pursuing a BTech degree at VIT Vellore.</div>
+    <div class="intro">
+        <div class="intro1">Hey! I'm Sumit</div>
+        <div class="intro2">
+            I'm a B.Tech CSE student at VIT Vellore, passionate about software development, web technologies, and innovation.
         </div>
-        <div class="image">
-            <img src="me.jpg">
-        </div>
-    </div>
-    <div class="aboutme" id="a">
-        <div class="space"></div>
-        <h1>About</h1>
-        <div class="aboutme1">
-            <img src="abc.webp">
-            <p>As a second-year BTech student at VIT Vellore, I possess foundational coding skills in C/C++, Java, and
-                Python, along with intermediate proficiency in HTML and CSS, and a basic understanding of JavaScript. In
-                addition to my technical abilities, I excel in communication and possess creative skills that enhance my
-                problem-solving capabilities. This combination of skills equips me to tackle diverse challenges and
-                contribute effectively to collaborative projects in the field of technology.
-            </p>
+        <div class="intro-links">
+            <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank" class="social-btn">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/sumitgupta24" target="_blank" class="social-btn">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a href="resume_sumitgupta-2.pdf" download class="social-btn resume-btn">
+                <i class="fa fa-download"></i> Resume
+            </a>
         </div>
     </div>
+    <div class="image">
+        <img src="me.jpg" alt="Sumit Gupta">
+    </div>
+</div>
+
+    <section id="about" class="about-section" >
+  <div class="about-card">
+    <h1>About Me</h1>
+    <p>
+      Hi, I'm Sumit Gupta, a passionate Computer Science and Engineering student from VIT Vellore. I enjoy building full-stack web apps, exploring new technologies, and solving real-world problems through code. 
+    </p>
+    <p>
+      I’ve built projects like a personal portfolio, budget tracker, and a cricket scoring app. I love blending creativity with logic to create impactful solutions.
+    </p>
+  </div>
+</section>
+
     <div id="Education" class="education">
         <div class="space"></div>
         <h1>Education</h1>
@@ -72,28 +88,64 @@
         </div>
     </div>
     <div id="Skills" class="skills">
-        <h1>Skills</h1>
-        <div class="coding">
-            <img src="c++.jpeg">
-            <img src="java.png">
-            <img src="python.jpeg">
-            
-        </div>
-        <div class="development">
-            <img src="html5.png">
-            <img src="css3.png">
-            <img src="js.png">
-        </div>
-        <div class="extra">
-            <img src="windows.png">
-            <img src="vscode.png">
+    <h1>Skills</h1>
+
+    <div class="skill-category">
+        <h2>Coding</h2>
+        <div class="skill-icons">
+            <div class="skill-item">
+                <img src="c++.jpeg" alt="C++">
+                <span>C++</span>
+            </div>
+            <div class="skill-item">
+                <img src="java.png" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="skill-item">
+                <img src="python.jpeg" alt="Python">
+                <span>Python</span>
+            </div>
         </div>
     </div>
+
+    <div class="skill-category">
+        <h2>Web Development</h2>
+        <div class="skill-icons">
+            <div class="skill-item">
+                <img src="html5.png" alt="HTML5">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+                <img src="css3.png" alt="CSS3">
+                <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+                <img src="js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-category">
+        <h2>Tools</h2>
+        <div class="skill-icons">
+            <div class="skill-item">
+                <img src="windows.png" alt="Windows">
+                <span>Windows</span>
+            </div>
+            <div class="skill-item">
+                <img src="vscode.png" alt="VS Code">
+                <span>VS Code</span>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div id="projects" class="projects">
         <h1>Projects</h1>
         <div class="proj">
             <div class="proj1">
-                <img src="budget.png">
+                <img src="moviesearch.png">
                 <h3>Budget Tracker</h3>
                 <div class="butto"><a href="https://sumitgupta24.github.io/Budget-Tracker/" target="_blank">Visit</a></div>
             </div>
@@ -119,29 +171,50 @@
         </div>
         </div>
     </div>
-    <div id="contactme" class="contactme">
-        <div class="content">
-        <h1>Sumit Gupta.</h1>
-        <div id="number">Mobile: +977 9813204173/+91 7061935850</div>
-        <div id="email"><a href="mailto:cricsumit24@gmail.com">E-mail:cricsumit24@gmail.com</a></div>
-        </div>
+     <!-- <div id="contact" class="contact">
+    <h1>Let's Connect</h1>
+    <div class="contact-container">
+        <form>
+            <input type="text" placeholder="Your Name" name="name" required><br>
+            <input type="email" placeholder="Your Email" name="email" required><br>
+            <textarea rows="6" placeholder="Your Message" name="message" required></textarea><br>
+            <button type="submit" class="butt">Send Message</button>
+        </form>
+    </div> -->
+</div>
+
+    <footer id="contactme" class="contactme">
+    <h1>Sumit Gupta</h1>
+    <p>Connect with me:</p>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/sumitgupta24" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/sumitg_24/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:cricsumit24@gmail.com"><i class="fa fa-envelope"></i></a>
     </div>
+    <p class="footer-text">© 2025 Sumit Gupta. All rights reserved.</p>
+</footer>
+
     <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        const currentTheme = localStorage.getItem('theme') || 'light-mode';
-    
-        document.body.classList.add(currentTheme);
-        toggleButton.textContent = currentTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
-    
-        toggleButton.addEventListener('click', function() {
-            document.body.classList.toggle('light-mode');
-            document.body.classList.toggle('dark-mode');
-            
-            const newTheme = document.body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
-            toggleButton.textContent = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const savedTheme = localStorage.getItem('theme') || 'light-mode';
+
+    document.body.classList.add(savedTheme);
+    themeIcon.className = savedTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
+
+    toggleButton.addEventListener('click', function () {
+        const isLight = document.body.classList.contains('light-mode');
+
+        document.body.classList.toggle('light-mode');
+        document.body.classList.toggle('dark-mode');
+
+        const newTheme = isLight ? 'dark-mode' : 'light-mode';
+        themeIcon.className = newTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
+
     
 </body>
 </html>
