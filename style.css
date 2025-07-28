@@ -148,14 +148,14 @@ h1::after {
     gap: 40px;
     flex-wrap: wrap;
 }
-.proj1, .proj2 {
+.proj1, .proj2, .proj3 {
     background: #ffffff;
     border-radius: 12px;
     padding: 20px;
     width: 350px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-.proj1 img, .proj2 img {
+.proj1 img, .proj2 img, .proj3 img {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
