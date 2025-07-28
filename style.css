@@ -168,6 +168,7 @@ h1::after {
     border-radius: 6px;
     text-align: center;
     transition: background 0.3s;
+    text-decoration: none;
 }
 .butto a:hover {
     background-color: #1c5ed6;
