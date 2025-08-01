@@ -12,23 +12,35 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar" id="home">
-            <div class="name">
-                Sumit Gupta.    
-            </div>
-            <button id="theme-toggle"><i id="theme-icon" class="fa fa-sun"></i></button>
+       <nav>
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="name">Sumit Gupta.</div>
+      <button id="theme-toggle" class="theme-toggle">
+        <i id="theme-icon" class="fa fa-optin-monster"></i>
+      </button>
+    </div>
+
+    <div class="navbar-right" id="navbar-menu">
+      <a href="#home" class="navitem">Home</a>
+      <a href="#about" class="navitem">About</a>
+      <a href="#Education" class="navitem">Education</a>
+      <a href="#Skills" class="navitem">Skills</a>
+      <a href="#projects" class="navitem">Projects</a>
+      <a href="#contact" class="navitem">Contact</a>
+    </div>
+  </div>
+</nav>
 
 
-            <a href="#home"><div class="navitem">Home</div></a>
-            <a href="#about"><div class="navitem">About</div></a>
-            <a href="#Education"><div class="navitem">Education</div></a>
-            <a href="#Skills"><div class="navitem">Skills</div></a>
-            <a href="#projects"><div class="navitem">Projects</div></a>
-            <a href="#contact"><div class="navitem">Contact</div></a>
-        </div>
-    </nav>
-    <div class="intropage">
+
+  </div>
+</nav>
+
+
+
+
+    <div id="home" class="intropage">
     <div class="intro">
         <div class="intro1">Hey! I'm Sumit</div>
         <div class="intro2">
@@ -41,27 +53,39 @@
             <a href="https://github.com/sumitgupta24" target="_blank" class="social-btn">
                 <i class="fa fa-github"></i> GitHub
             </a>
-            <a href="SUMIT-GUPTA-Resume.pdf" download class="social-btn resume-btn">
+            <a href="Sumit_Gupta_Resume.pdf" download class="social-btn resume-btn">
                 <i class="fa fa-download"></i> Resume
             </a>
         </div>
     </div>
     <div class="image">
-        <img src="me.jpg" alt="Sumit Gupta">
+        <img src="1000042117.jpg" alt="Sumit Gupta">
     </div>
 </div>
 
-    <section id="about" class="about-section" >
-  <div class="about-card">
-    <h1>About Me</h1>
-    <p>
-      Hi, I'm Sumit Gupta, a passionate Computer Science and Engineering student from VIT Vellore. I enjoy building full-stack web apps, exploring new technologies, and solving real-world problems through code. 
-    </p>
-    <p>
-      I’ve built projects like a personal portfolio, budget tracker, and a cricket scoring app. I love blending creativity with logic to create impactful solutions.
-    </p>
+   <section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm <strong>Sumit Gupta</strong>, a passionate Computer Science and Engineering student from <strong>VIT Vellore</strong>. I enjoy building full-stack web apps, exploring emerging technologies, and solving real-world problems through code.
+      </p>
+      <p>
+        With hands-on experience in both frontend and backend development, I’ve built impactful projects like a <strong>personal portfolio</strong>, an intuitive <strong>budget tracker</strong>, and a dynamic <strong> SportSpark– Full-Stack Sports E-Commerce Platform </strong>. I focus on writing clean, maintainable code and delivering user-friendly interfaces.
+      </p>
+      <p>
+        I'm always eager to learn — whether it’s new frameworks, cloud services, or design principles. Outside of coding, I’m an active cricket player and love working on collaborative tech projects that challenge me to grow.
+      </p>
+      <p>
+        Let’s connect and create something amazing!
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="1000042318.jpg" alt="Sumit Gupta" />
+    </div>
   </div>
 </section>
+
 
     <div id="Education" class="education">
         <div class="space"></div>
@@ -214,23 +238,29 @@
 </footer>
 
     <script>
-    const toggleButton = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const savedTheme = localStorage.getItem('theme') || 'light-mode';
+    // Theme Toggle (already working)
+const toggleButton = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const savedTheme = localStorage.getItem('theme') || 'light-mode';
 
-    document.body.classList.add(savedTheme);
-    themeIcon.className = savedTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
+document.body.classList.add(savedTheme);
+themeIcon.className = savedTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
 
-    toggleButton.addEventListener('click', function () {
-        const isLight = document.body.classList.contains('light-mode');
+toggleButton.addEventListener('click', function () {
+    const isLight = document.body.classList.contains('light-mode');
 
-        document.body.classList.toggle('light-mode');
-        document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
 
-        const newTheme = isLight ? 'dark-mode' : 'light-mode';
-        themeIcon.className = newTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
-        localStorage.setItem('theme', newTheme);
-    });
+    const newTheme = isLight ? 'dark-mode' : 'light-mode';
+    themeIcon.className = newTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
+    localStorage.setItem('theme', newTheme);
+});
+
+// Hamburger Menu Toggle
+
+
+
 </script>
 
     
