@@ -4,265 +4,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Gupta</title>
+    <title>Sumit Gupta - Full Stack Developer & Cricket Enthusiast</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-       <nav>
-  <div class="navbar">
-    <div class="navbar-left">
-      <div class="name">Sumit Gupta.</div>
-      <button id="theme-toggle" class="theme-toggle">
-        <i id="theme-icon" class="fa fa-optin-monster"></i>
-      </button>
-    </div>
-
-    <div class="navbar-right" id="navbar-menu">
-      <a href="#home" class="navitem">Home</a>
-      <a href="#about" class="navitem">About</a>
-      <a href="#Education" class="navitem">Education</a>
-      <a href="#Skills" class="navitem">Skills</a>
-      <a href="#projects" class="navitem">Projects</a>
-      <a href="#contact" class="navitem">Contact</a>
-    </div>
-  </div>
-</nav>
-
-
-
-  </div>
-</nav>
-
-
-
-
-    <div id="home" class="intropage">
-    <div class="intro">
-        <div class="intro1">Hey! I'm Sumit</div>
-        <div class="intro2">
-            I'm a B.Tech CSE student at VIT Vellore, passionate about software development, web technologies, and innovation.
-        </div>
-        <div class="intro-links">
-            <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank" class="social-btn">
-                <i class="fa fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/sumitgupta24" target="_blank" class="social-btn">
-                <i class="fa fa-github"></i> GitHub
-            </a>
-            <a href="Sumit_Gupta_Resume.pdf" download class="social-btn resume-btn">
-                <i class="fa fa-download"></i> Resume
-            </a>
-        </div>
-    </div>
-    <div class="image">
-        <img src="1000042117.jpg" alt="Sumit Gupta">
-    </div>
-</div>
-
-   <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-text">
-      <h1>About Me</h1>
-      <p>
-        Hi, I'm <strong>Sumit Gupta</strong>, a passionate Computer Science and Engineering student from <strong>VIT Vellore</strong>. I enjoy building full-stack web apps, exploring emerging technologies, and solving real-world problems through code.
-      </p>
-      <p>
-        With hands-on experience in both frontend and backend development, I’ve built impactful projects like a <strong>personal portfolio</strong>, an intuitive <strong>budget tracker</strong>, and a dynamic <strong> SportSpark– Full-Stack Sports E-Commerce Platform </strong>. I focus on writing clean, maintainable code and delivering user-friendly interfaces.
-      </p>
-      <p>
-        I'm always eager to learn — whether it’s new frameworks, cloud services, or design principles. Outside of coding, I’m an active cricket player and love working on collaborative tech projects that challenge me to grow.
-      </p>
-      <p>
-        Let’s connect and create something amazing!
-      </p>
-    </div>
-    <div class="about-image">
-      <img src="1000042318.jpg" alt="Sumit Gupta" />
-    </div>
-  </div>
-</section>
-
-
-    <div id="Education" class="education">
-        <div class="space"></div>
-        <h1>Education</h1>
-        <div class="eddetails">
-            <div class="college">
-                <h2>Vellore Institute of Technology</h2>
-                <h3>Bachelors of Technology(B.Tech)</h3>
-                <h4>2022-2026</h4>
-                <h3>Specialization: Computer Science and Engineering</h3>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="name">Sumit Gupta.</div>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i id="theme-icon" class="fa fa-sun"></i>
+                </button>
             </div>
-            <div class="highschool">
-                <h2>Annie Besant International School</h2>
-                <h3>Higher Secondary School</h3>
-                <h4>2019-2021</h4>
-                <h3>Specialization: Science</h3>
-            </div>
-            <div class="lowschool">
-                <h2>D.A.V Sushil Kedia Vishwa Bharati School</h2>
-                <h3>Lower Secondary School</h3>
-                <h4>2006-2019</h4>
-                <h3>Specialization: Science</h3>
+
+            <div class="navbar-right" id="navbar-menu">
+                <a href="#home" class="navitem">Home</a>
+                <a href="#about" class="navitem">About</a>
+                <a href="#journey" class="navitem">My Journey</a>
+                <a href="#skills" class="navitem">Skills</a>
+                <a href="#projects" class="navitem">Projects</a>
+                <a href="#contact" class="navitem">Contact</a>
             </div>
         </div>
-    </div>
-    <div id="Skills" class="skills">
-    <h1>Skills</h1>
+    </nav>
 
-    <div class="skill-category">
-        <h2>Coding</h2>
-        <div class="skill-icons">
-            <div class="skill-item">
-                <img src="c++.jpeg" alt="C++">
-                <span>C++</span>
+    <!-- Hero Section -->
+    <div id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="wave"></span> Hey there! I'm
+                </div>
+                <div class="hero-name">Sumit Gupta</div>
+                <div class="hero-subtitle">
+                    Full-Stack Developer | Cricket Player | Problem Solver
+                </div>
+                <div class="hero-description">
+                    Turning ideas into digital reality, one line of code at a time. When I'm not building web applications, 
+                    you'll find me strategizing on the cricket field or exploring the latest tech trends.
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Coding</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <!-- <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Cups of Coffee</span>
+                    </div> -->
+                </div>
+                <div class="hero-cta">
+                    <a href="RESUME-SUMIT-GUPTA.pdf" download class="primary-btn">
+                        <i class="fa fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="secondary-btn">
+                        <i class="fa fa-coffee"></i> Let's Chat
+                    </a>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="java.png" alt="Java">
-                <span>Java</span>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="1000042117.jpg" alt="Sumit Gupta - Developer">
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="python.jpeg" alt="Python">
-                <span>Python</span>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore my journey</div>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">About</span> Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Nice to meet you!</h3>
+                        <p class="lead">
+                            I'm a passionate Computer Science student at VIT Vellore with a love for creating 
+                            meaningful digital experiences and a serious addiction to solving complex problems.
+                        </p>
+                    </div>
+                    
+                    <div class="personality-traits">
+                        <div class="trait">
+                            <div class="trait-content">
+                                <h4>Goal-Oriented</h4>
+                                <p>Whether it's debugging code at 2 AM or hitting a perfect cover drive, I don't stop until I get it right.</p>
+                            </div>
+                        </div>
+                        <div class="trait">
+                            <div class="trait-content">
+                                <h4>Team Player</h4>
+                                <p>Cricket taught me that great achievements come from great teamwork. I bring this spirit to every project.</p>
+                            </div>
+                        </div>
+                        <div class="trait">
+                            <div class="trait-content">
+                                <h4>Innovation Driven</h4>
+                                <p>I love experimenting with new technologies and finding creative solutions to everyday problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <img src="1000042318.jpg" alt="Sumit Gupta" class="about-image">
+                    <div class="quote-bubble">
+                        <p>"Code is like humor. When you have to explain it, it's bad."</p>
+                        <cite>- Cory House</cite>
+                    </div>
+                </div>
             </div>
-            <div class="skill-item">
-                <img src="mysql.png" alt="MySQL">
-                <span>MySQL</span>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="journey-section">
+        <div class="container">
+            <h2 class="section-title">
+                My <span class="title-accent">Journey</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Vellore Institute of Technology</h3>
+                        <h4>Vellore, India</h2>
+                        <h4>B.Tech Computer Science & Engineering</h4>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Data Structures</span>
+                            <span class="highlight">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Annie Besant International School</h3>
+                        <h4>Patna, India</h4>
+                        <h4>Higher Secondary Education - Science</h4>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Mathematics</span>
+                            <span class="highlight">Physics</span>
+                            <span class="highlight">Chemistry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2006-2019</div>
+                    <div class="timeline-content">
+                        <h3>D.A.V Sushil Kedia Vishwa Bharati School</h3>
+                        <h4>Kathmandu, Nepal</h4>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Mathematics</span>
+                            <span class="highlight">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                My <span class="title-accent">Arsenal</span>
+            </h2>
+            <p class="section-subtitle">The tools and technologies I wield to bring ideas to life</p>
             
-        </div>
-    </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3>Programming Languages</h3>
+                        <p>My core communication tools</p>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="c++.jpeg" alt="C++">
+                            <span>C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="java.png" alt="Java">
+                            <span>Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="python.jpeg" alt="Python">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="skill-category">
-        <h2>Web Development</h2>
-        <div class="skill-icons">
-            <div class="skill-item">
-                <img src="html5.png" alt="HTML5">
-                <span>HTML5</span>
-            </div>
-            <div class="skill-item">
-                <img src="css3.png" alt="CSS3">
-                <span>CSS3</span>
-            </div>
-            <div class="skill-item">
-                <img src="js.png" alt="JavaScript">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <img src="reactjs.png" alt="ReactJS">
-                <span>ReactJS</span>
-            </div>
-        </div>
-    </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3>Web Technologies</h3>
+                        <p>Building beautiful, functional web experiences</p>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="html5.png" alt="HTML5">
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="css3.png" alt="CSS3">
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="reactjs.png" alt="ReactJS">
+                            <span>ReactJS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="skill-category">
-        <h2>Tools</h2>
-        <div class="skill-icons">
-            <div class="skill-item">
-                <img src="windows.png" alt="Windows">
-                <span>Windows</span>
-            </div>
-            <div class="skill-item">
-                <img src="vscode.png" alt="VS Code">
-                <span>VS Code</span>
-            </div>
-            <div class="skill-item">
-                <img src="github.png" alt="GitHub">
-                <span>GitHub</span>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <h3>Tools & Databases</h3>
+                        <p>My trusty sidekicks for development</p>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="mysql.png" alt="MySQL">
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="vscode.png" alt="VS Code">
+                            <span>VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="github.png" alt="GitHub">
+                            <span>GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-    <div id="projects" class="projects">
-        <h1>Projects</h1>
-        <div class="proj">
-            <div class="proj3">
-                <img src="sportspark.png">
-                <h3>SportSpark</h3>
-                <div class="butto"><a href="https://sportspark-b9cu.vercel.app/" target="_blank">Visit</a></div>
-            </div>
-            <div class="proj2">
-                <img src="wave.png">
-                <h3>Wave</h3>
-                <div class="butto"><a href="https://sumitgupta24.github.io/Wave/" target="_blank">Visit</a></div>
-            </div>
-            <div class="proj1">
-                <img src="budgettracker.png">
-                <h3>Budget Tracker</h3>
-                <div class="butto"><a href="https://sumitgupta24.github.io/Budget-Tracker/" target="_blank">Visit</a></div>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="contact">
-        <div class="contact1">
-        <h1>Let's Connect</h1>
-        <div class="inputdetails">
-            <div class="inputdet">
-            <form action="">
-                <input type="text" placeholder="Name" name="name" id="name"><br><br>
-                <input type="text" placeholder="Email" name="email" id="email"><br><br>
-                <textarea id="message" placeholder="Message" rows="10" cols="40"></textarea><br><br>
-                <button type="submit" class="butt">Submit</button>
-            </form>
-            </div>
-        </div>
-        </div>
-    </div>
-     <!-- <div id="contact" class="contact">
-    <h1>Let's Connect</h1>
-    <div class="contact-container">
-        <form>
-            <input type="text" placeholder="Your Name" name="name" required><br>
-            <input type="email" placeholder="Your Email" name="email" required><br>
-            <textarea rows="6" placeholder="Your Message" name="message" required></textarea><br>
-            <button type="submit" class="butt">Send Message</button>
-        </form>
-    </div> -->
-</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                Featured <span class="title-accent">Projects</span>
+            </h2>
+            <p class="section-subtitle">Here are some projects I've poured my heart (and many late nights) into</p>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="sportspark.png" alt="SportSpark">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sportspark-b9cu.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured Project</div>
+                        <h3>SportSpark</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce platform for sports enthusiasts. Built with modern web technologies 
+                            and featuring a clean, intuitive interface. My biggest project to date!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">2 months</span>
+                                <span class="stat-label">Development time</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">5000+</span>
+                                <span class="stat-label">Lines of code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer id="contactme" class="contactme">
-    <h1>Sumit Gupta</h1>
-    <p>Connect with me:</p>
-    <div class="footer-links">
-        <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/sumitgupta24" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="https://www.instagram.com/sumitg_24/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="mailto:cricsumit24@gmail.com"><i class="fa fa-envelope"></i></a>
-    </div>
-    <p class="footer-text">© 2025 Sumit Gupta. All rights reserved.</p>
-</footer>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="wave.png" alt="Wave">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sumitgupta24.github.io/Wave/" target="_blank" class="project-link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Wave</h3>
+                        <p class="project-description">
+                            An elegant and responsive web application with smooth animations and modern design principles.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="budgettracker.png" alt="Budget Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://sumitgupta24.github.io/Budget-Tracker/" target="_blank" class="project-link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Budget Tracker</h3>
+                        <p class="project-description">
+                            A practical personal finance management tool that helps users track expenses and manage their budget effectively.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/sumitgupta24" target="_blank" class="secondary-btn">
+                    <i class="fa fa-github"></i> Visit My GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                Let's <span class="title-accent">Connect</span>
+            </h2>
+            <p class="section-subtitle">
+                Got a project in mind? Want to collaborate? Or just want to chat about cricket and code? 
+                I'm all ears! ☕
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's grab a virtual coffee!</h3>
+                        <p>
+                            I love meeting new people and discussing exciting projects. Whether you're a fellow developer, 
+                            a potential collaborator, or someone with a cool idea, I'd love to hear from you.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:cricsumit24@gmail.com" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email Me</h4>
+                                    <p>cricsumit24@gmail.com</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>LinkedIn</h4>
+                                    <p>Let's connect professionally</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/sumitgupta24" target="_blank" class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fa fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>GitHub</h4>
+                                    <p>Check out my code</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="message-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="What should I call you?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">What's this about?</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="project">Project Inquiry</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="general">General Chat</option>
+                                <option value="cricket">Cricket Discussion</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea, project, or just say hello!" required></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn">
+                            <i class="fa fa-paper-plane"></i> Send Message
+                        </button>   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>Sumit Gupta</h3>
+                    <p>Software Engineer</p>
+                    <p>Building digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/sumitgupta24" target="_blank">GitHub</a>
+                        <a href="https://www.instagram.com/sumitg_24/" target="_blank">Instagram</a>
+                        <a href="mailto:cricsumit24@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sumit Gupta.</p>
+                <p class="footer-note">Currently open to new opportunities and exciting collaborations!</p>
+            </div>
+        </div>
+    </footer>
     <script>
-    // Theme Toggle (already working)
-const toggleButton = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
-const savedTheme = localStorage.getItem('theme') || 'light-mode';
+  function toggleTheme() {
+    const body = document.body;
+    const icon = document.getElementById("theme-icon");
+    body.classList.toggle("dark-mode");
 
-document.body.classList.add(savedTheme);
-themeIcon.className = savedTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
+    if (body.classList.contains("dark-mode")) {
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+    } else {
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    }
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
 
-toggleButton.addEventListener('click', function () {
-    const isLight = document.body.classList.contains('light-mode');
+  window.onload = () => {
+    const savedTheme = localStorage.getItem("theme");
+    const icon = document.getElementById("theme-icon");
 
-    document.body.classList.toggle('light-mode');
-    document.body.classList.toggle('dark-mode');
-
-    const newTheme = isLight ? 'dark-mode' : 'light-mode';
-    themeIcon.className = newTheme === 'light-mode' ? 'fa fa-sun' : 'fa fa-moon';
-    localStorage.setItem('theme', newTheme);
-});
-
-// Hamburger Menu Toggle
-
-
-
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      icon.classList.remove("fa-sun");
+      icon.classList.add("fa-moon");
+    }
+  };
 </script>
 
-    
 </body>
 </html>
