@@ -18,10 +18,6 @@ function toggleTheme() {
   }
 }
 
-/**
- * Sets the theme on page load based on user's preference
- * stored in localStorage.
- */
 window.onload = () => {
   const savedTheme = localStorage.getItem("theme");
   const icon = document.getElementById("theme-icon");
@@ -31,17 +27,8 @@ window.onload = () => {
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
   }
-
-  // Animate skill bars when they scroll into view
-  // This is an additional suggestion for your new UI
   observeSkillBars();
 };
-
-
-/**
- * BONUS: Animates skill bars when they enter the viewport.
- * Your CSS has the transition, but this JS triggers it on scroll.
- */
 function observeSkillBars() {
   const skillProgressElements = document.querySelectorAll('.skill-progress');
   
@@ -49,11 +36,11 @@ function observeSkillBars() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.width = entry.target.dataset.width;
-        skillObserver.unobserve(entry.target); // Only animate once
+        skillObserver.unobserve(entry.target); 
       }
     });
   }, {
-    threshold: 0.5 // Trigger when 50% of the bar is visible
+    threshold: 0.5
   });
 
   skillProgressElements.forEach(el => {
