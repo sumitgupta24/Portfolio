@@ -171,6 +171,7 @@ section {
 .navitem:hover::after {
   width: 100%;
 }
+
 .hero-section {
   min-height: 100vh;
   display: grid;
@@ -422,6 +423,7 @@ section {
     transform: translateX(-50%) translateY(-5px)
   }
 }
+
 .section-title {
   font-size: clamp(2rem, 5vw, 2.8rem);
   text-align: center;
@@ -676,6 +678,7 @@ section {
   font-size: .8rem;
   font-weight: 600;
 }
+
 .skills-section {
   background: var(--surface-50);
 }
@@ -919,6 +922,7 @@ section {
   color: var(--ink-500);
   margin-bottom: 14px;
 }
+
 .contact-section {
   background: var(--surface-50);
 }
@@ -1026,6 +1030,7 @@ section {
   border-color: var(--teal-500);
   box-shadow: var(--ring);
 }
+
 .footer {
   background: var(--green-900);
   color: var(--surface-0);
@@ -1132,7 +1137,7 @@ body.dark-mode .fun-facts h4,
 body.dark-mode .category-header h3,
 body.dark-mode .project-content h3,
 body.dark-mode .contact-card h3,
-body.dark-mode .timeline-content h3 {
+body.d.timeline-content h3 {
   color: var(--ink-900);
 }
 
@@ -1180,6 +1185,7 @@ body.dark-mode .method-info p {
 body.dark-mode .primary-btn {
   color: var(--ink-900);
 }
+
 body.dark-mode .secondary-btn {
   color: var(--ink-900);
 }
@@ -1345,6 +1351,7 @@ body.dark-mode .projects-cta p {
   }
 }
 
+/* Fallback button styles - you had some overrides at the end */
 .primary-btn {
   background-color: #004030;
   color: #FFF9E5;
@@ -1364,10 +1371,12 @@ body.dark-mode .projects-cta p {
   background-color: #4A9782;
   color: #FFF9E5;
 }
+
 body:not(.dark-mode) .primary-btn {
   background-color: #004030;
   color: #FFF9E5;
 }
+
 body:not(.dark-mode) .secondary-btn {
   background-color: #004030;
   color: #FFF9E5;
@@ -1377,9 +1386,8 @@ body.dark-mode .primary-btn {
   background-color: #DCD0A8;
   color: #004030;
 }
+
 body.dark-mode .secondary-btn {
   background-color: #DCD0A8;
   color: #004030;
 }
-
-
