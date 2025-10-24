@@ -31,7 +31,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <div id="home" class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
@@ -55,11 +54,7 @@
                         <span class="stat-number">5+</span>
                         <span class="stat-label">Projects Built</span>
                     </div>
-                    <!-- <div class="stat-item">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Cups of Coffee</span>
-                    </div> -->
-                </div>
+                    </div>
                 <div class="hero-cta">
                     <a href="RESUME-SUMIT-GUPTA.pdf" download class="primary-btn">
                         <i class="fa fa-download"></i> Download Resume
@@ -81,7 +76,6 @@
         </div>
     </div>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title">
@@ -129,7 +123,6 @@
         </div>
     </section>
 
-    <!-- Journey Section -->
     <section id="journey" class="journey-section">
         <div class="container">
             <h2 class="section-title">
@@ -176,7 +169,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title">
@@ -285,7 +277,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">
@@ -391,7 +382,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">
@@ -479,7 +469,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -511,38 +500,8 @@
             </div>
         </div>
     </footer>
-    <script>
-  function toggleTheme() {
-    const body = document.body;
-    const icon = document.getElementById("theme-icon");
-    body.classList.toggle("dark-mode");
 
-    if (body.classList.contains("dark-mode")) {
-      icon.classList.remove("fa-sun");
-      icon.classList.add("fa-moon");
-    } else {
-      icon.classList.remove("fa-moon");
-      icon.classList.add("fa-sun");
-    }
-    if (body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  }
-
-  window.onload = () => {
-    const savedTheme = localStorage.getItem("theme");
-    const icon = document.getElementById("theme-icon");
-
-    if (savedTheme === "dark") {
-      document.body.classList.add("dark-mode");
-      icon.classList.remove("fa-sun");
-      icon.classList.add("fa-moon");
-    }
-  };
-</script>
+    <script src="script.js" defer></script>
 
 </body>
-
 </html>
