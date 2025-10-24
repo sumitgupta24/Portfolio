@@ -1393,23 +1393,17 @@ body.dark-mode .secondary-btn {
 }
 
 
-/* === NEW JOURNEY CARD GRID SECTION === */
-
 .journey-section {
   background: var(--surface-0);
 }
-
-/* This creates a responsive grid of cards */
 .journey-grid {
   display: grid;
-  /* This will create 1, 2, or 3 columns depending on screen space */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px; /* Space between the cards */
-  max-width: 1200px; /* Let it fill the container */
+  gap: 24px; 
+  max-width: 1200px; 
   margin: 0 auto;
 }
 
-/* This is the style for each individual box */
 .journey-card {
   background: var(--surface-50);
   padding: 26px;
@@ -1424,7 +1418,6 @@ body.dark-mode .secondary-btn {
   box-shadow: var(--shadow-md);
 }
 
-/* The date is now just a subtitle */
 .journey-date {
   font-size: 0.9rem;
   font-weight: 700;
@@ -1451,7 +1444,6 @@ body.dark-mode .secondary-btn {
   margin-top: 16px;
 }
 
-/* We can re-use the .highlight style from before */
 .highlight {
   background: var(--grad-accent);
   color: #fff;
