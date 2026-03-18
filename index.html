@@ -11,22 +11,25 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="navbar">
             <div class="navbar-left">
                 <div class="name">Sumit Gupta</div>
-                <button class="theme-toggle" onclick="toggleTheme()">
-                    <i id="theme-icon" class="fa fa-sun"></i>
-                </button>
             </div>
 
             <div class="navbar-right" id="navbar-menu">
-                <a href="#home" class="navitem">Home</a>
+                <a href="#home" class="navitem active">Home</a>
                 <a href="#about" class="navitem">About</a>
-                <a href="#journey" class="navitem">My Journey</a>
+                <a href="#terminal" class="navitem">Terminal</a>
+                <a href="#profiles" class="navitem">Coding Profiles</a>
                 <a href="#skills" class="navitem">Skills</a>
                 <a href="#projects" class="navitem">Projects</a>
                 <a href="#contact" class="navitem">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -37,7 +40,7 @@
                 <div class="greeting">
                     <span class="wave"></span> Hey there! I'm
                 </div>
-                <div class="hero-name">Sumit Gupta</div>
+                <div class="hero-name" id="hero-name">Sumit Gupta</div>
                 <div class="hero-subtitle">
                     Software Engineer
                 </div>
@@ -57,7 +60,7 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="RESUME-SUMIT-GUPTA-MAIN.pdf" download class="primary-btn">
+                    <a href="SUMIT-GUPTA-RESUME-CSE.pdf" download class="primary-btn">
                         <i class="fa fa-download"></i> Download Resume
                     </a>
                     <a href="#contact" class="secondary-btn">
@@ -77,11 +80,12 @@
         </div>
     </div>
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">
                 <span class="title-accent">About</span> Me
             </h2>
+            <p class="section-subtitle">Get to know me better</p>
             <div class="about-content">
                 <div class="about-text">
                     <div class="about-intro">
@@ -93,21 +97,21 @@
                     </div>
 
                     <div class="personality-traits">
-                        <div class="trait">
+                        <div class="trait animate-on-scroll">
                             <div class="trait-content">
                                 <h4>Goal-Oriented</h4>
                                 <p>Whether it's debugging code at 2 AM or hitting a perfect cover drive, I don't stop
                                     until I get it right.</p>
                             </div>
                         </div>
-                        <div class="trait">
+                        <div class="trait animate-on-scroll">
                             <div class="trait-content">
                                 <h4>Team Player</h4>
                                 <p>Cricket taught me that great achievements come from great teamwork. I bring this
                                     spirit to every project.</p>
                             </div>
                         </div>
-                        <div class="trait">
+                        <div class="trait animate-on-scroll">
                             <div class="trait-content">
                                 <h4>Innovation Driven</h4>
                                 <p>I love experimenting with new technologies and finding creative solutions to everyday
@@ -116,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
+                <div class="about-visual animate-on-scroll">
                     <img src="1000042318.jpg" alt="Sumit Gupta" class="about-image">
                     <div class="quote-bubble">
                         <p>"Code is like humor. When you have to explain it, it's bad."</p>
@@ -127,54 +131,182 @@
         </div>
     </section>
 
-    <section id="journey" class="journey-section">
+    <section id="terminal" class="terminal-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">
-                My <span class="title-accent">Journey</span>
+                <span class="title-accent">Terminal</span>
             </h2>
-            <p class="section-subtitle">My education and background.</p>
+            <p class="section-subtitle">A glimpse into my development environment</p>
 
-            <div class="journey-grid">
-
-                <div class="journey-card">
-                    <div class="journey-date">2022 - Present</div>
-                    <h3>Vellore Institute of Technology</h3>
-                    <h4>Vellore, India</h4>
-                    <h4>B.Tech Computer Science & Engineering</h4>
-                    <div class="journey-highlights">
-                        <span class="highlight">Data Structures</span>
-                        <span class="highlight">Web Development</span>
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="terminal-title">sumit@portfolio: ~</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-output">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">whoami</span>
+                        </div>
+                        <div class="terminal-result">Sumit Gupta</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">cat skills.txt</span>
+                        </div>
+                        <div class="terminal-result">Full Stack Developer | React, Node.js, Python</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">ls projects/</span>
+                        </div>
+                        <div class="terminal-result">EventXpert/  Hush/  SportSpark/  Wave/</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">echo "Building the future, one commit at a time"</span>
+                        </div>
+                        <div class="terminal-result">Building the future, one commit at a time</div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-cursor">_</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="journey-card">
-                    <div class="journey-date">2019 - 2021</div>
-                    <h3>Annie Besant International School</h3>
-                    <h4>Patna, India</h4>
-                    <h4>Higher Secondary Education - Science</h4>
-                    <div class="journey-highlights">
-                        <span class="highlight">Mathematics</span>
-                        <span class="highlight">Physics</span>
-                        <span class="highlight">Chemistry</span>
-                    </div>
-                </div>
-
-                <div class="journey-card">
-                    <div class="journey-date">2006 - 2019</div>
-                    <h3>D.A.V Sushil Kedia Vishwa Bharati School</h3>
-                    <h4>Kathmandu, Nepal</h4>
-                    <h4>Secondary Education</h4>
-                    <div class="journey-highlights">
-                        <span class="highlight">Mathematics</span>
-                        <span class="highlight">Problem Solving</span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills-section">
+    <section id="profiles" class="profiles-section animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">
+                Coding <span class="title-accent">Profiles</span>
+            </h2>
+            <p class="section-subtitle">Where I solve problems and compete</p>
+
+            <div class="profiles-grid">
+                <div class="profile-card animate-on-scroll">
+                    <div class="profile-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3 class="profile-name">LeetCode</h3>
+                    <p class="profile-handle">@sumitgupta24</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">900+</span>
+                            <span class="stat-label">Problems</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Knight</span>
+                            <span class="stat-label">Rank</span>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/sumitgupta24" target="_blank" class="profile-btn">
+                        <i class="fa fa-external-link"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="profile-card animate-on-scroll">
+                    <div class="profile-icon">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <h3 class="profile-name">Codeforces</h3>
+                    <p class="profile-handle">@sumitgupta24</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">900+</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Pupil</span>
+                            <span class="stat-label">Rank</span>
+                        </div>
+                    </div>
+                    <a href="https://codeforces.com/profile/sumitgupta24" target="_blank" class="profile-btn">
+                        <i class="fa fa-external-link"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="profile-card animate-on-scroll">
+                    <div class="profile-icon">
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3 class="profile-name">CodeChef</h3>
+                    <p class="profile-handle">@sumitgupta24</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-number">2★</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1400+</span>
+                            <span class="stat-label">Score</span>
+                        </div>
+                    </div>
+                    <a href="https://www.codechef.com/users/sumitgupta24" target="_blank" class="profile-btn">
+                        <i class="fa fa-external-link"></i> View Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey-section animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">
+                My <span class="title-accent">Journey</span>
+            </h2>
+            <p class="section-subtitle">Education and professional background</p>
+
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-date">2022 - 2026</div>
+                    <div class="timeline-content">
+                        <h3>Vellore Institute of Technology</h3>
+                        <h4>B.Tech Computer Science & Engineering</h4>
+                        <p>Vellore, India</p>
+                        <div class="journey-highlights">
+                            <span class="highlight">Data Structures & Algorithms</span>
+                            <span class="highlight">Full Stack Development</span>
+                            <span class="highlight">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Annie Besant International School</h3>
+                        <h4>Higher Secondary Education - Science</h4>
+                        <p>Patna, India</p>
+                        <div class="journey-highlights">
+                            <span class="highlight">Mathematics</span>
+                            <span class="highlight">Physics</span>
+                            <span class="highlight">Chemistry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-date">2006 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>D.A.V Sushil Kedia Vishwa Bharati School</h3>
+                        <h4>Secondary Education</h4>
+                        <p>Kathmandu, Nepal</p>
+                        <div class="journey-highlights">
+                            <span class="highlight">Mathematics</span>
+                            <span class="highlight">Problem Solving</span>
+                            <span class="highlight">Science Foundation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">
                 My <span class="title-accent">Arsenal</span>
@@ -182,27 +314,27 @@
             <p class="section-subtitle">The tools and technologies I wield to bring ideas to life</p>
 
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category animate-on-scroll">
                     <div class="category-header">
                         <h3>Programming Languages</h3>
                         <p>My core communication tools</p>
                     </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="c++.jpeg" alt="C++">
                             <span>C++</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="java.png" alt="Java">
                             <span>Java</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="70%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="python.jpeg" alt="Python">
                             <span>Python</span>
                             <div class="skill-bar">
@@ -212,34 +344,34 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category animate-on-scroll">
                     <div class="category-header">
                         <h3>Web Technologies</h3>
                         <p>Building beautiful, functional web experiences</p>
                     </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="html5.png" alt="HTML5">
                             <span>HTML5</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="css3.png" alt="CSS3">
                             <span>CSS3</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="js.png" alt="JavaScript">
                             <span>JavaScript</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="reactjs.png" alt="ReactJS">
                             <span>ReactJS</span>
                             <div class="skill-bar">
@@ -249,27 +381,27 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category animate-on-scroll">
                     <div class="category-header">
                         <h3>Tools & Databases</h3>
                         <p>My trusty sidekicks for development</p>
                     </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="mysql.png" alt="MySQL">
                             <span>MySQL</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="vscode.png" alt="VS Code">
                             <span>VS Code</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="95%"></div>
                             </div>
                         </div>
-                        <div class="skill-item">
+                        <div class="skill-item animate-on-scroll">
                             <img src="github.png" alt="GitHub">
                             <span>GitHub</span>
                             <div class="skill-bar">
@@ -282,7 +414,7 @@
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">
                 Featured <span class="title-accent">Projects</span>
@@ -291,7 +423,7 @@
 
             <div class="projects-grid">
 
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="eventxpert.png" alt="New Project">
                         <div class="project-overlay">
@@ -319,7 +451,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="hush.png" alt="New Project">
                         <div class="project-overlay">
@@ -348,7 +480,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="sportspark.png" alt="SportSpark">
                         <div class="project-overlay">
@@ -375,7 +507,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="wave.png" alt="Wave">
                         <div class="project-overlay">
@@ -399,7 +531,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="budgettracker.png" alt="Budget Tracker">
                         <div class="project-overlay">
@@ -424,7 +556,7 @@
                 </div>
 
 
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <div class="project-image">
                         <img src="shm.png" alt="Next Project">
                         <div class="project-overlay">
@@ -461,7 +593,7 @@
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section animate-on-scroll">
         <div class="container">
             <h2 class="section-title">
                 Let's <span class="title-accent">Connect</span>
@@ -473,7 +605,7 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-card">
+                    <div class="contact-card animate-on-scroll">
                         <h3>Let's grab a virtual coffee!</h3>
                         <p>
                             I love meeting new people and discussing exciting projects. Whether you're a fellow
@@ -482,7 +614,7 @@
                         </p>
 
                         <div class="contact-methods">
-                            <a href="mailto:cricsumit24@gmail.com" class="contact-method">
+                            <a href="mailto:cricsumit24@gmail.com" class="contact-method animate-on-scroll">
                                 <div class="method-icon">
                                     <i class="fa fa-envelope"></i>
                                 </div>
@@ -493,7 +625,7 @@
                             </a>
 
                             <a href="https://www.linkedin.com/in/sumit-gupta-24s12s25s30r16b/" target="_blank"
-                                class="contact-method">
+                                class="contact-method animate-on-scroll">
                                 <div class="method-icon">
                                     <i class="fa fa-linkedin"></i>
                                 </div>
@@ -503,7 +635,7 @@
                                 </div>
                             </a>
 
-                            <a href="https://github.com/sumitgupta24" target="_blank" class="contact-method">
+                            <a href="https://github.com/sumitgupta24" target="_blank" class="contact-method animate-on-scroll">
                                 <div class="method-icon">
                                     <i class="fa fa-github"></i>
                                 </div>
@@ -516,8 +648,8 @@
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <form class="message-form">
+                <div class="contact-form animate-on-scroll">
+                    <form class="message-form" id="contact-form">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="What should I call you?" required>
@@ -582,6 +714,17 @@
             </div>
         </div>
     </footer>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
     <script src="script.js" defer></script>
 
